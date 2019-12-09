@@ -91,6 +91,9 @@ function OrderCreateStep1BusinessLogic() {
     $("#cent_recipientmap").closest("tr").hide();
     $("#cent_recipientmap_label").closest("tr").hide();
     
+    $("#cent_cardorderpaymenttype").closest("tr").hide();
+    $("#cent_cardorderpaymenttype_label").closest("tr").hide();
+    
     //$("#cent_cardorderpaymenttype").hide();
     //$("#cent_cardorderpaymenttype_label").hide();
     
