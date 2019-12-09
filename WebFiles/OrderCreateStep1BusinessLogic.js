@@ -85,6 +85,12 @@ function OrderCreateStep1BusinessLogic() {
     $("#statuscode").hide();
     $("#statuscode_label").hide();
     
+    $("#cent_clientcampaign").closest("tr").hide();
+    $("#cent_clientcampaign_label").closest("tr").hide();
+    
+    $("#cent_recipientmap").closest("tr").hide();
+    $("#cent_recipientmap_label").closest("tr").hide();
+    
     //$("#cent_cardorderpaymenttype").hide();
     //$("#cent_cardorderpaymenttype_label").hide();
     
