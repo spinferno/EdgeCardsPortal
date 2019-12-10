@@ -175,18 +175,22 @@ h1.underline, h4.underline {
     border-left: 1px solid #666; }
   
   /* line 230, G:/Agents/BA5135/_wap/117/s/Resources/Theme/ElectricBlueDesign/theme/bootstrap/theme.scss */
-  .navbar-static-top.navbar .menu-bar > .navbar-nav > li > a {
+  .navbar .menu-bar > .navbar-nav > li > a {
     font-family: "Segoe UI Semibold", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 1em;
-    font-weight: bold; }
+    font-weight: bold;
+    height: 70px;
+    line-height: 2.5;
+    }
   
   /* line 237, G:/Agents/BA5135/_wap/117/s/Resources/Theme/ElectricBlueDesign/theme/bootstrap/theme.scss */
   .navbar-static-top.navbar .menu-bar > .navbar-nav > .divider-vertical {
-    height: 21px;
+    height: 27px;
     margin: 0 4px;
-    margin-top: 14.5px;
+    margin-top: 20.5px;
     border-right: 1px solid #fff;
-    border-left: 1px solid #666; }
+    border-left: 1px solid #666;
+    }
   
   /* line 247, G:/Agents/BA5135/_wap/117/s/Resources/Theme/ElectricBlueDesign/theme/bootstrap/theme.scss */
   .navbar-fixed-top .navbar-brand {
@@ -979,18 +983,20 @@ h1.underline, h4.underline {
     transform: skew(0deg, 1.3deg);
     overflow: hidden;
     margin-top: 60px;
-    margin-bottom: -20px; }
+    margin-bottom: -20px;
+    }
     /* line 150, G:/Agents/BA5135/_wap/117/s/Resources/Theme/ElectricBlueDesign/customer/theme.scss */
     .section-diagonal-right.home-section {
       margin-top: -60px; }
     /* line 154, G:/Agents/BA5135/_wap/117/s/Resources/Theme/ElectricBlueDesign/customer/theme.scss */
     .section-diagonal-right .section-diagonal-right-content {
-      -webkit-transform: skew(0deg, -1.3deg);
+      /* -webkit-transform: skew(0deg, -1.3deg); */
       -ms-transform: skew(0deg, -1.3deg);
-      transform: skew(0deg, -1.3deg);
-      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("homethumbnail4.jpg") no-repeat;
-      background-size: cover;
-      margin-top: -70px; }
+      /* transform: skew(0deg, -1.3deg); */
+      /* background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("homethumbnail4.jpg") no-repeat; */
+      /* background-size: cover; */
+      margin-top: -70px;
+      }
       /* line 162, G:/Agents/BA5135/_wap/117/s/Resources/Theme/ElectricBlueDesign/customer/theme.scss */
       .section-diagonal-right .section-diagonal-right-content:before {
         content: "";
@@ -1217,112 +1223,138 @@ h1.underline, h4.underline {
   /* line 408, G:/Agents/BA5135/_wap/117/s/Resources/Theme/ElectricBlueDesign/customer/theme.scss */
   .page_section.section-sub-landing .row .btn-lg-home p {
     border-top: none; }
-/* #endregion */
+  /* #endregion */
   
-/************************************************/
-/* V1 Styles                                    */
-/************************************************/
-
-/* Global Styles */
-body > div.navbar.navbar-inverse.navbar-static-top > .container {
+  /************************************************/
+  /* V1 Styles                                    */
+  /************************************************/
+  
+  /* Global Styles */
+  body > div.navbar.navbar-inverse.navbar-static-top > .container {
   height: 70px;
-}
-
-#content_form > div.page-heading > div > div.page-header {
+  }
+  
+  .navbar-static-bottom.navbar .menu-bar > .navbar-nav > li > a {
+  height: 40px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  line-height: 2;
+  }
+  
+  .navbar.navbar-inverse.navbar-static-bottom  {
+    height: 40px;    
+    min-height: 40px;
+  }
+  
+  .navbar.navbar-inverse.navbar-static-bottom > div > ul > li {
+  
+  }
+  
+  .navbar.navbar-inverse.navbar-static-bottom .menu-bar > .navbar-nav > .divider-vertical {
+  height: 25.2px;
+  margin: 0 4px;
+  margin-top: 5.5px;
+  border-right: 1px solid #fff;
+  border-left: 1px solid #666;
+  }
+  
+  #content_form > div.page-heading > div > div.page-header {
   border-bottom: none;
-}
-
-#EntityFormView h1 {
+  }
+  
+  #EntityFormView h1 {
   font-family: 'Montserrat', Arial, Helvetica, sans-serif;
   font-size: 3.5rem; 
-}
-
-#WebFormControl_ProgressIndicator > ol > li.list-group-item {
+  }
+  
+  #WebFormControl_ProgressIndicator > ol > li.list-group-item {
   padding-left: 2.5rem;
   padding-right: 2.5rem;
-}
-
-#WebFormControl_ProgressIndicator > ol > li.list-group-item.active {
+  }
+  
+  #WebFormControl_ProgressIndicator > ol > li.list-group-item.active {
   background-color: #f7323f;
-}
-
-#WebFormControl_ProgressIndicator > ol > li.list-group-item:not(.active) {
+  }
+  
+  #WebFormControl_ProgressIndicator > ol > li.list-group-item:not(.active) {
   color: #222222;
-}
-
-#EntityFormView h2 {
+  }
+  
+  #EntityFormView h2 {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 2.4rem;
   font-weight: 700;
   color: #222222;
-}
-
-#EntityFormView > h2.tab-title {
+  }
+  
+  #EntityFormView > h2.tab-title {
   margin-bottom: 3rem;
   border-bottom: none;
-}
-
-#WebFormControl_ProgressIndicator > ol {
+  }
+  
+  #WebFormControl_ProgressIndicator > ol {
   margin-bottom: 4rem;
-}
-
-#EntityFormView > div.tab.clearfix > div > div > fieldset > table > tbody > tr > td.clearfix.cell,
-#WebFormPanel > div.actions > div {
+  }
+  
+  #EntityFormView > div.tab.clearfix > div > div > fieldset > table > tbody > tr > td.clearfix.cell,
+  #WebFormPanel > div.actions > div {
   /* aligns form control elements to left border */
   padding-left: 0;
   padding-right: 2.5rem;
-}
-
-#EntityFormView > div.tab.clearfix > div.tab-column {
+  }
+  
+  #EntityFormView > div.tab.clearfix > div.tab-column {
   padding-left: 0;
   padding-right: 0;
-}
-
-.input-group .input-group-btn .btn {
+  }
+  
+  .input-group .input-group-btn .btn {
   border-color: #ccc;
   color: #666;
-}
-
-#EntityFormView .form-control[disabled], 
-#EntityFormView .form-control[readonly], 
-#EntityFormView fieldset[disabled] .form-control {
+  }
+  
+  #EntityFormView .form-control[disabled], 
+  #EntityFormView .form-control[readonly], 
+  #EntityFormView fieldset[disabled] .form-control {
   background-color: #f5f5f5;
-}
-
-/* Order Create Step 1 styles */
-#EntityFormView > div.tab.clearfix > div:nth-child(1) > div > fieldset > table > tbody > tr:nth-child(6),
-#EntityFormView > div.tab.clearfix > div:nth-child(1) > div > fieldset > table > tbody > tr:nth-child(7),
-#EntityFormView > div.tab.clearfix > div:nth-child(1) > div > fieldset > table > tbody > tr:nth-child(8),
-#EntityFormView > div.tab.clearfix > div:nth-child(1) > div > fieldset > table > tbody > tr:nth-child(9),
-#EntityFormView > div.tab.clearfix > div:nth-child(1) > div > fieldset > table > tbody > tr:nth-child(10),
-#EntityFormView > div.tab.clearfix > div:nth-child(1) > div > fieldset > table > tbody > tr:nth-child(11),
-#EntityFormView > div.tab.clearfix > div:nth-child(1) > div > fieldset > table > tbody > tr:nth-child(12),
-#EntityFormView > div.tab.clearfix > div:nth-child(1) > div > fieldset > table > tbody > tr:nth-child(13),
-#EntityFormView > div.tab.clearfix > div:nth-child(1) > div > fieldset > table > tbody > tr:nth-child(14),
-#EntityFormView > div.tab.clearfix > div:nth-child(1) > div > fieldset > table > tbody > tr:nth-child(15),
-#EntityFormView > div.tab.clearfix > div:nth-child(1) > div > fieldset > table > tbody > tr:nth-child(16),
-#EntityFormView > div.tab.clearfix > div:nth-child(1) > div > fieldset > table > tbody > tr:nth-child(17),
-#EntityFormView > div.tab.clearfix > div:nth-child(1) > div > fieldset > table > tbody > tr:nth-child(18),
-#EntityFormView > div.tab.clearfix > div:nth-child(1) > div > fieldset > table > tbody > tr:nth-child(19) {
+  }
+  
+  /* Order Create Step 1 styles */
+  #EntityFormView > div.tab.clearfix > div:nth-child(1) > div > fieldset > table > tbody > tr:nth-child(6),
+  #EntityFormView > div.tab.clearfix > div:nth-child(1) > div > fieldset > table > tbody > tr:nth-child(7),
+  #EntityFormView > div.tab.clearfix > div:nth-child(1) > div > fieldset > table > tbody > tr:nth-child(8),
+  #EntityFormView > div.tab.clearfix > div:nth-child(1) > div > fieldset > table > tbody > tr:nth-child(9),
+  #EntityFormView > div.tab.clearfix > div:nth-child(1) > div > fieldset > table > tbody > tr:nth-child(10),
+  #EntityFormView > div.tab.clearfix > div:nth-child(1) > div > fieldset > table > tbody > tr:nth-child(11),
+  #EntityFormView > div.tab.clearfix > div:nth-child(1) > div > fieldset > table > tbody > tr:nth-child(12),
+  #EntityFormView > div.tab.clearfix > div:nth-child(1) > div > fieldset > table > tbody > tr:nth-child(13),
+  #EntityFormView > div.tab.clearfix > div:nth-child(1) > div > fieldset > table > tbody > tr:nth-child(14),
+  #EntityFormView > div.tab.clearfix > div:nth-child(1) > div > fieldset > table > tbody > tr:nth-child(15),
+  #EntityFormView > div.tab.clearfix > div:nth-child(1) > div > fieldset > table > tbody > tr:nth-child(16),
+  #EntityFormView > div.tab.clearfix > div:nth-child(1) > div > fieldset > table > tbody > tr:nth-child(17),
+  #EntityFormView > div.tab.clearfix > div:nth-child(1) > div > fieldset > table > tbody > tr:nth-child(18),
+  #EntityFormView > div.tab.clearfix > div:nth-child(1) > div > fieldset > table > tbody > tr:nth-child(19) {
     display: none;
-}
-
-#WebFormPanel > div.actions {
+  }
+  
+  #WebFormPanel > div.actions {
   border: none;
-}
-
-.btn-group.entity-action-button input.btn {
+  padding-top: 0;
+  }
+  
+  .btn-group.entity-action-button input.btn {
   background-color: #f7323f;
   font-family: 'Montserrat', Arial, Helvetica, sans-serif;
   font-size: 1.6rem;
   padding-left: 2.5rem;
   padding-right: 2.5rem;
-}
-
-/* Order Create Step 2 styles */
-
-
-/* Order Create Step 2 styles */
-
-
-/* Order Create Step 2 styles */
+  }
+  
+  /* Order Create Step 2 styles */
+  
+  
+  /* Order Create Step 2 styles */
+  
+  
+  /* Order Create Step 2 styles */
+  
