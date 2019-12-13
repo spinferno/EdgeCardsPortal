@@ -1,7 +1,7 @@
 function OrderCreateStep2BusinessLogic() {
 
     insertCustomNextButton();
-    $("#AttachFile").before("<a href='~/recipient-template'>Download Recipient File template</a>");
+    $("#AttachFile").before("<a href='~/recipient-template'><span class='glyphicon glyphicon-download-alt' aria-hidden='true'></span> Download Recipient File template</a>");
 
     showNextToAttach();
 

@@ -1230,131 +1230,252 @@ h1.underline, h4.underline {
   /************************************************/
   
   /* Global Styles */
-  body > div.navbar.navbar-inverse.navbar-static-top > .container {
-  height: 70px;
+  .navbar.navbar-inverse.navbar-static-top > .container {
+    height: 70px;
   }
   
   .navbar-static-bottom.navbar .menu-bar > .navbar-nav > li > a {
-  height: 40px;
-  padding-top: 3px;
-  padding-bottom: 3px;
-  line-height: 2;
+    height: 40px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    line-height: 2;
   }
   
   .navbar.navbar-inverse.navbar-static-bottom  {
-    height: 40px;    
+    height: 40px;
     min-height: 40px;
+    margin-bottom: 0;
   }
   
-  .navbar.navbar-inverse.navbar-static-bottom > div > ul > li {
+  .navbar.navbar-inverse.navbar-static-bottom>div>ul>li {
   
   }
   
-  .navbar.navbar-inverse.navbar-static-bottom .menu-bar > .navbar-nav > .divider-vertical {
-  height: 25.2px;
-  margin: 0 4px;
-  margin-top: 5.5px;
-  border-right: 1px solid #fff;
-  border-left: 1px solid #666;
+  .navbar.navbar-inverse.navbar-static-bottom .menu-bar>.navbar-nav>.divider-vertical {
+    height: 25.2px;
+    margin: 0 4px;
+    margin-top: 5.5px;
+    border-right: 1px solid #fff;
+    border-left: 1px solid #666;
   }
   
-  #content_form > div.page-heading > div > div.page-header {
-  border-bottom: none;
+  #content_form>div.page-heading>div>div.page-header {
+    border-bottom: none;
   }
   
   #EntityFormView h1 {
-  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
-  font-size: 3.5rem; 
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-size: 3.5rem;
   }
   
-  #WebFormControl_ProgressIndicator > ol > li.list-group-item {
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
+  #WebFormControl_ProgressIndicator>ol>li.list-group-item {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    border: 0;
   }
   
-  #WebFormControl_ProgressIndicator > ol > li.list-group-item.active {
-  background-color: #f7323f;
+  #WebFormControl_ProgressIndicator>ol>li.list-group-item.active {
+    background-color: black;
   }
   
-  #WebFormControl_ProgressIndicator > ol > li.list-group-item:not(.active) {
-  color: #222222;
+  #WebFormControl_ProgressIndicator>ol>li.list-group-item.list-group-item-success {
+    background-color: #228b22;
+    color: white;
   }
   
   #EntityFormView h2 {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 2.4rem;
-  font-weight: 700;
-  color: #222222;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: #222222;
   }
   
-  #EntityFormView > h2.tab-title {
-  margin-bottom: 3rem;
-  border-bottom: none;
+  #EntityFormView>h2.tab-title {
+    margin-bottom: 3rem;
+    border-bottom: none;
   }
   
-  #WebFormControl_ProgressIndicator > ol {
-  margin-bottom: 4rem;
+  #WebFormControl_ProgressIndicator>ol {
+    margin-bottom: 4rem;
   }
   
-  #EntityFormView > div.tab.clearfix > div > div > fieldset > table > tbody > tr > td.clearfix.cell,
-  #WebFormPanel > div.actions > div {
-  /* aligns form control elements to left border */
-  padding-left: 0;
-  padding-right: 2.5rem;
+  #EntityFormView>div.tab.clearfix>div>div>fieldset>table>tbody>tr>td.clearfix.cell,
+  #WebFormPanel>div.actions>div {
+    /* aligns form control elements to left border */
+    padding-left: 0;
+    padding-right: 2.5rem;
   }
   
-  #EntityFormView > div.tab.clearfix > div.tab-column {
-  padding-left: 0;
-  padding-right: 0;
+  #EntityFormView>div.tab.clearfix>div.tab-column {
+    padding-left: 0;
+    padding-right: 0;
   }
   
   .input-group .input-group-btn .btn {
-  border-color: #ccc;
-  color: #666;
+    border-color: #ccc;
+    color: #666;
   }
   
-  #EntityFormView .form-control[disabled], 
-  #EntityFormView .form-control[readonly], 
+  #EntityFormView .form-control[disabled],
+  #EntityFormView .form-control[readonly],
   #EntityFormView fieldset[disabled] .form-control {
-  background-color: #f5f5f5;
+    background-color: #f5f5f5;
+  }
+  
+  input[type="file"]::-webkit-file-upload-button {
+    /* forms > input control vertical alignment in safari issue */
+    vertical-align: middle;
+    height: 100%;
+  }
+  
+  input[type="file"] {
+    /* forms > input control vertical alignment in safari issue */
+    height: 3rem;
+  }
+  
+  fieldset .section td.cell .info label {
+    color: #222;
+    font-size: 1.6rem;
+    font-weight: 700;
+  }
+  
+  fieldset .section td.cell .control input {
+    color: #222;
+    font-size: 1.5rem;
   }
   
   /* Order Create Step 1 styles */
-  #EntityFormView > div.tab.clearfix > div:nth-child(1) > div > fieldset > table > tbody > tr:nth-child(6),
-  #EntityFormView > div.tab.clearfix > div:nth-child(1) > div > fieldset > table > tbody > tr:nth-child(7),
-  #EntityFormView > div.tab.clearfix > div:nth-child(1) > div > fieldset > table > tbody > tr:nth-child(8),
-  #EntityFormView > div.tab.clearfix > div:nth-child(1) > div > fieldset > table > tbody > tr:nth-child(9),
-  #EntityFormView > div.tab.clearfix > div:nth-child(1) > div > fieldset > table > tbody > tr:nth-child(10),
-  #EntityFormView > div.tab.clearfix > div:nth-child(1) > div > fieldset > table > tbody > tr:nth-child(11),
-  #EntityFormView > div.tab.clearfix > div:nth-child(1) > div > fieldset > table > tbody > tr:nth-child(12),
-  #EntityFormView > div.tab.clearfix > div:nth-child(1) > div > fieldset > table > tbody > tr:nth-child(13),
-  #EntityFormView > div.tab.clearfix > div:nth-child(1) > div > fieldset > table > tbody > tr:nth-child(14),
-  #EntityFormView > div.tab.clearfix > div:nth-child(1) > div > fieldset > table > tbody > tr:nth-child(15),
-  #EntityFormView > div.tab.clearfix > div:nth-child(1) > div > fieldset > table > tbody > tr:nth-child(16),
-  #EntityFormView > div.tab.clearfix > div:nth-child(1) > div > fieldset > table > tbody > tr:nth-child(17),
-  #EntityFormView > div.tab.clearfix > div:nth-child(1) > div > fieldset > table > tbody > tr:nth-child(18),
-  #EntityFormView > div.tab.clearfix > div:nth-child(1) > div > fieldset > table > tbody > tr:nth-child(19) {
+  #EntityFormView>div.tab.clearfix>div:nth-child(1)>div>fieldset>table.section[data-name=summary_tab_section_17]>tbody>tr:nth-child(6),
+  #EntityFormView>div.tab.clearfix>div:nth-child(1)>div>fieldset>table.section[data-name=summary_tab_section_17]>tbody>tr:nth-child(7),
+  #EntityFormView>div.tab.clearfix>div:nth-child(1)>div>fieldset>table.section[data-name=summary_tab_section_17]>tbody>tr:nth-child(8),
+  #EntityFormView>div.tab.clearfix>div:nth-child(1)>div>fieldset>table.section[data-name=summary_tab_section_17]>tbody>tr:nth-child(9),
+  #EntityFormView>div.tab.clearfix>div:nth-child(1)>div>fieldset>table.section[data-name=summary_tab_section_17]>tbody>tr:nth-child(10),
+  #EntityFormView>div.tab.clearfix>div:nth-child(1)>div>fieldset>table.section[data-name=summary_tab_section_17]>tbody>tr:nth-child(11),
+  #EntityFormView>div.tab.clearfix>div:nth-child(1)>div>fieldset>table.section[data-name=summary_tab_section_17]>tbody>tr:nth-child(12),
+  #EntityFormView>div.tab.clearfix>div:nth-child(1)>div>fieldset>table.section[data-name=summary_tab_section_17]>tbody>tr:nth-child(13),
+  #EntityFormView>div.tab.clearfix>div:nth-child(1)>div>fieldset>table.section[data-name=summary_tab_section_17]>tbody>tr:nth-child(14),
+  #EntityFormView>div.tab.clearfix>div:nth-child(1)>div>fieldset>table.section[data-name=summary_tab_section_17]>tbody>tr:nth-child(15),
+  #EntityFormView>div.tab.clearfix>div:nth-child(1)>div>fieldset>table.section[data-name=summary_tab_section_17]>tbody>tr:nth-child(16),
+  #EntityFormView>div.tab.clearfix>div:nth-child(1)>div>fieldset>table.section[data-name=summary_tab_section_17]>tbody>tr:nth-child(17),
+  #EntityFormView>div.tab.clearfix>div:nth-child(1)>div>fieldset>table.section[data-name=summary_tab_section_17]>tbody>tr:nth-child(18),
+  #EntityFormView>div.tab.clearfix>div:nth-child(1)>div>fieldset>table.section[data-name=summary_tab_section_17]>tbody>tr:nth-child(19) {
     display: none;
   }
   
-  #WebFormPanel > div.actions {
-  border: none;
-  padding-top: 0;
+  #WebFormPanel>div.actions {
+    border: none;
+    padding-top: 0;
+  }
+  
+  button.btn, 
+  .crmEntityFormView .actions .btn {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-size: 1.6rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
   }
   
   .btn-group.entity-action-button input.btn {
-  background-color: #f7323f;
-  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
-  font-size: 1.6rem;
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
+    background-color: #f7323f;
+    color: white;
+    border: 1px solid #f7323f;
+  }
+  
+  #cent_productid_lookupmodal > div > section > div > div > div.modal-footer > button.primary.btn.btn-primary {
+    /* product lookup dialog > button */
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    background-color: #f7323f;
+    border: 1px solid #f7323f;
   }
   
   /* Order Create Step 2 styles */
+  #EntityFormView > div.tab.clearfix > div > div > fieldset > table.section[data-name=tab_3_section_2] > tbody > tr:first-child {
+    /* form controls > hide gaps */
+    display: none;
+  }
+  
+  #EntityFormView > div.tab.clearfix > div > div > fieldset > table.section[data-name=tab_3_section_2] > tbody > tr:nth-child(2) > td.clearfix.cell.notes-cell {
+    /* form controls > hide gaps */
+    padding-bottom: 0;
+  }
+  
+  #EntityFormView > div.tab.clearfix[data-name=tab_3] {
+    /* form controls > hide gaps */
+    margin-bottom: 0;
+  }
+  
+  #EntityFormView > div.tab.clearfix > div > div > fieldset > table.section[data-name=tab_3_section_2] > tbody > tr:nth-child(2) > td.clearfix.cell.notes-cell .control #notescontrol > div,
+  #EntityFormView > .tr > .cell.file-cell {
+    padding-left: 0;
+  }
+  
+  #EntityFormView > .tr > .cell.file-cell > .control > a,
+  #EntityFormView > .tr > .cell.file-cell > .control > #AttachFile {
+    margin-bottom: 1rem;
+    display: block;
+  }
+  
+  #EntityFormView > .tr > .cell.file-cell > .control > a {
+    color: #f7323f;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-size: 1.6rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    background-color: #f7323f;
+    display: block;
+    width: fit-content;
+    color: white;
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+    border: 1px solid #f7323f;
+  }
+  
+  #EntityFormView > .tr > .cell.file-cell > .control > a:hover {
+    text-decoration: none;
+  }
+  
+  #btnNext {
+    /* form > button gaps to be consistent */
+    margin-left: 0;
+  }
+  
+  button.submit-btn {
+    /* form > save and exit button to be red */
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    background-color: #f7323f;
+    border: 1px solid #f7323f;
+  }
+  
+  button.submit-btn:hover {
+    background-color: white;
+    color: #f7323f;
+    border: 1px solid #f7323f;
+  }
+  
+  input.previous-btn,
+  .btn-group.entity-action-button input.previous-btn {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-size: 1.6rem;
+    background-color: black;
+    border: 1px solid black;
+  }
+  
+  input.previous-btn:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+  }
+    
+  #fileErrorMessage {
+    padding-bottom: 1rem;
+  }
+  
+  #ErrorTbl > tbody > tr > td:nth-child(1) {
+    padding-left: 0;
+  }
+  
+  /* Order Create Step 3 styles */
   
   
-  /* Order Create Step 2 styles */
-  
-  
-  /* Order Create Step 2 styles */
+  /* Order Create Step 4 styles */
   
